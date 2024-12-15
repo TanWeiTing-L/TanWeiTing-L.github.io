@@ -105,7 +105,7 @@ body {
 }
 
 .mainContent {
-    transform: translateY(-50px);
+    transform: translateY(50px);
 }
 
 .mainContent h1 {
