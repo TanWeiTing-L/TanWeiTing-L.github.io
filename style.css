@@ -104,10 +104,6 @@ body {
     color: rgb(194, 194, 194);
 }
 
-.mainContent {
-    transform: translateY(-150px);
-}
-
 .mainContent h1 {
     font-family: Raleway;
     color: white;
