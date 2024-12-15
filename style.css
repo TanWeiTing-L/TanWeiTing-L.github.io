@@ -24,9 +24,10 @@ body {
 
 @keyframes slideInTextUp {
     from {
-        transform: translateY(-20vh);
+        transform: translateY(20vh);
     }
 }
+
 
 .spacer {
     content: '';
@@ -106,6 +107,9 @@ body {
 
 .mainContent {
     transform: translateY(50px);
+    animation-name: slideInTextUp;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 .mainContent h1 {
