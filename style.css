@@ -1,0 +1,221 @@
+body {
+    background-color: #001220;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.headerImage {
+    animation-name: slideInHeader, fadeIn;
+    animation-duration: 0.8s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+@keyframes slideInHeader {
+    from {
+        transform: translateY(-60vh);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes slideInTextUp {
+    from {
+        transform: translateY(-20vh);
+    }
+}
+
+.spacer {
+    content: '';
+    aspect-ratio: 960 / 540;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+}
+
+.layer1 {
+    background-image: url('./images/waves.svg');
+}
+
+.layer2 {
+    background-image: url('./images/waves2.svg');
+}
+
+.heading {
+    animation-name: slideInTextUp;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    margin-top: 5em;
+    padding: 1em;
+    transform: translateY(-4em);
+    text-align: center;
+}
+
+.heading h1 {
+    font-family: Raleway;
+    color: white;
+    font-size: 5vw; /* Scales with viewport width */
+    margin-bottom: 2%;
+    padding: 0.5rem;
+    text-align: center;
+    z-index: 2;
+}
+
+.heading p {
+    font-family: Raleway;
+    color: white;
+    font-size: 1.2rem; /* Scales with base font size */
+    padding: 0.5rem;
+    text-align: center;
+    animation-name: stretchOut;
+    animation-duration: 0.6s;
+    z-index: 2;
+}
+
+.name {
+    font-family: Raleway;
+    color: white;
+    font-size: 1rem; /* Scales relative to base font */
+    padding: 0.5rem;
+    text-align: left;
+    margin-top: 2vh;
+    margin-left: 2%;
+}
+
+.buttons {
+    text-align: left;
+    margin: 1em;
+}
+
+.buttons a {
+    font-family: Raleway;
+    color: white;
+    text-decoration: none;
+    margin: 1%;
+    padding: 0.5rem;
+}
+
+.buttons a:hover {
+    color: rgb(194, 194, 194);
+}
+
+.mainContent {
+    transform: translateY(-150px);
+}
+
+.mainContent h1 {
+    font-family: Raleway;
+    color: white;
+    font-size: 4vw; /* Scales with viewport width */
+    margin: 7.5% 0;
+    padding: 0.5rem;
+    text-align: center;
+    z-index: 2;
+}
+
+.mainContent p, .mainContent li {
+    font-family: Raleway;
+    color: white;
+    font-size: 1.5rem; /* Scales relative to base font */
+    margin: 1em;
+    padding: 0.5rem;
+    text-align: center;
+    z-index: 2;
+    list-style-type: none;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .heading h1 {
+        font-size: 6vw; /* Slightly larger on smaller screens to maintain prominence */
+        margin-bottom: 1em;
+    }
+
+    .heading p {
+        font-size: 1rem; /* Slightly smaller but proportional */
+    }
+
+    .name {
+        font-size: 0.9rem;
+        margin-left: 4%;
+    }
+
+    .mainContent h1 {
+        font-size: 5vw; /* Responsive scaling */
+        margin: 5% 0;
+    }
+
+    .mainContent p, .mainContent li {
+        font-size: 1.2rem;
+    }
+
+    .buttons {
+        text-align: center; /* Center buttons for smaller screens */
+    }
+
+    .buttons a {
+        margin: 0.5%;
+        padding: 0.4rem;
+    }
+}
+
+
+.footer{
+    background:#000b10;
+    padding:10px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+}
+
+.footer .row{
+    width:100%;
+    margin:5% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+}
+
+.footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+}
+
+.footer .row a:hover{
+    color:#ffffff;
+}
+
+.footer .row ul{
+    width:100%;
+}
+
+.footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+}
+
+.footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+}
+
+@media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+
+    .footer .row a i{
+    margin:0% 3%;
+    }
+}
