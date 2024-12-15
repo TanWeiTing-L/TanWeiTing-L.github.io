@@ -73,8 +73,6 @@ body {
     font-size: 1.2rem; /* Scales with base font size */
     padding: 0.5rem;
     text-align: center;
-    animation-name: stretchOut;
-    animation-duration: 0.6s;
     z-index: 2;
 }
 
@@ -108,7 +106,7 @@ body {
 .mainContent {
     transform: translateY(50px);
     animation-name: slideInTextUp;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
