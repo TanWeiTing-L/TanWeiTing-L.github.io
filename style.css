@@ -44,7 +44,7 @@ body {
 }
 
 .layer2 {
-    background-image: url('./images/waves2.svg');
+    background-image: url('./images/scatter.svg');
 }
 
 .heading {
@@ -55,6 +55,10 @@ body {
     padding: 1em;
     transform: translateY(-4em);
     text-align: center;
+}
+
+.text hr{
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .heading h1 {
@@ -108,7 +112,7 @@ body {
 .mainContent {
     transform: translateY(50px);
     animation-name: slideInTextUp;
-    animation-duration: 2s;
+    animation-duration: 1.2s;
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
@@ -131,6 +135,7 @@ body {
     text-align: center;
     z-index: 2;
     list-style-type: none;
+    margin-bottom: 10vh;
 }
 
 /* Media Queries for Smaller Screens */
@@ -171,16 +176,20 @@ body {
 
 .footer{
     background:#000b10;
+    background-image: url("images/footer waves.svg");
+    background-size: cover;
+    background-position: center;
     padding:10px 0px;
     font-family: 'Play', sans-serif;
     text-align:center;
+    margin-top: 50vh;
 }
 
 .footer .row{
     width:100%;
     margin:5% 0%;
     padding:0.6% 0%;
-    color:gray;
+    color:rgb(255, 255, 255);
     font-size:0.8em;
 }
 
