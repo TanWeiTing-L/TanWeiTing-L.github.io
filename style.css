@@ -107,10 +107,13 @@ body {
     color: rgb(194, 194, 194);
 }
 
+.loaded {
+    animation-name: slideInTextUp, fadeIn;
+    animation-duration: 1.2s;
+}
+
 .mainContent {
     transform: translateY(50px);
-    animation-name: slideInTextUp;
-    animation-duration: 1.2s;
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
