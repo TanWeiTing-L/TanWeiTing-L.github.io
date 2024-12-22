@@ -112,6 +112,12 @@ body {
     animation-duration: 1.2s;
 }
 
+.mainContent iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .mainContent {
     transform: translateY(50px);
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
@@ -130,7 +136,7 @@ body {
 .mainContent p, .mainContent li {
     font-family: Raleway;
     color: white;
-    font-size: 1.5rem; /* Scales relative to base font */
+    font-size: 1.5rem;
     margin: 1em;
     padding: 0.5rem;
     text-align: center;
@@ -148,30 +154,40 @@ body {
 }
 
 .feedback {
-    padding: 1em;
+    padding: 2em;
     text-align: center;
     font-family: Raleway;
+    background-color: rgba(204, 204, 204, 0.500);
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; 
+    margin: 2em auto;
 }
 
-.feedback input:not([type="submit"], [type="reset"]) {
-    padding: 0.5em;
-    width: 80%;
-    height: 20%;
-    margin: 1em;
-    margin-left: 1em;
+.feedback input:not([type="submit"], [type="reset"]), .feedback textarea {
+    padding: 0.75em;
+    width: calc(100% - 2em); 
+    margin: 1em auto;
+    border: 1px solid rgba(204, 204, 204, 0.500); 
+    border-radius: 5px; 
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); 
+    font-size: 1rem; 
 }
 
-.feedback textarea {
-    padding: 0.5em;
-    width: 80%;
-    height: 30%;
-    padding-left: 1em;
-    padding-right: 1em;
+.feedback input[type="submit"], .feedback input[type="reset"] {
+    padding: 0.75em 1.5em;
     margin: 1em;
+    border: none;
+    border-radius: 5px; 
+    background-color: #007BFF; 
+    color: white; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
 }
 
-.feedback input[type="submit"], [type="reset"] {
-    margin: 1em;
+.feedback input[type="submit"]:hover, .feedback input[type="reset"]:hover {
+    background-color: #0056b3; 
 }
 
 @media (max-width: 768px) {
