@@ -147,6 +147,33 @@ body {
     color: rgb(56, 23, 176);
 }
 
+.feedback {
+    padding: 1em;
+    text-align: center;
+    font-family: Raleway;
+}
+
+.feedback input:not([type="submit"], [type="reset"]) {
+    padding: 0.5em;
+    width: 80%;
+    height: 20%;
+    margin: 1em;
+    margin-left: 1em;
+}
+
+.feedback textarea {
+    padding: 0.5em;
+    width: 80%;
+    height: 30%;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 1em;
+}
+
+.feedback input[type="submit"], [type="reset"] {
+    margin: 1em;
+}
+
 @media (max-width: 768px) {
     .heading h1 {
         font-size: 6vw;

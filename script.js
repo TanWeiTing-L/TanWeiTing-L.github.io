@@ -17,3 +17,13 @@ if (targets.length > 0) {
 } else {
   console.log('No matching elements found in the DOM');
 }
+
+function feedbackSubmit() {
+  const nameInput = document.getElementById('name');
+  const emailInput = document.getElementById('email');
+  const messageInput = document.getElementById('comment');
+
+  nameInput.value = '';
+  emailInput.value = '';
+  messageInput.value = '';
+  }
