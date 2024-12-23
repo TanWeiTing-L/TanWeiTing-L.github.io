@@ -63,6 +63,21 @@
             <p>Protect your computer with BitDefender, an antivirus solution that is both effective and unobtrusive.</p>
         </div>
 
+        <div class="passwordGenerator">
+            <h1>Password Generator</h1>
+            <p>Or maybe try our password generator!</p>
+            <h1 id="password" onclick="generatePassword()">Click Me!</h1>
+
+            <div>
+                <p id="copy" onclick="copyToClipboard()">Copy to clipboard</p>
+            </div>
+
+            <div class="specialCharacters">
+                <input type="checkbox" id="specialCharacters" name="specialCharacters" value="specialCharacters">
+                <label for="specialCharacters">Include special characters</label>
+            </div>
+        </div>
+
     </section>
 
     <footer>
